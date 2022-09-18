@@ -2,7 +2,7 @@ plugins: stylelint-prettier
 extends:
   - stylelint-config-standard
   - stylelint-config-recess-order
-  - stylelint-config-prettier
+  - stylelint-config-prettie
 overrides: 
   - files:
     - 'src/**/*.{ts,tsx}'
