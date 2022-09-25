@@ -13,27 +13,42 @@
     "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
     "format": "yarn prettier --write"
   },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  },
   "dependencies": {
+    "@emotion/css": "^11.10.0",
     "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.2",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "autoprefixer": "^10.4.12",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
     "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "stylelint": "^14.11.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^28.0.0",
     "stylelint-prettier": "^2.0.0",
+    "tailwindcss": "^3.1.8",
+    "twin.macro": "^2.8.2",
     "typescript": "4.8.3"
   },
   "volta": {

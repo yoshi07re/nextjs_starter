@@ -3,6 +3,7 @@
     "stylelint.vscode-stylelint",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "styled-components.vscode-styled-components"
+    "styled-components.vscode-styled-components",
+    "lightyen.tailwindcss-intellisense-twin"
   ]
 }
