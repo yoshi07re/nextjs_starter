@@ -1,5 +1,5 @@
 {
-  "name": "18trailer",
+  "name": "next.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,10 @@
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
     "format": "yarn prettier --write"
+  },
+  "volta": {
+    "node": "16.16.0",
+    "yarn": "1.22.19"
   },
   "babelMacros": {
     "twin": {
@@ -50,9 +54,5 @@
     "tailwindcss": "^3.1.8",
     "twin.macro": "^2.8.2",
     "typescript": "4.8.3"
-  },
-  "volta": {
-    "node": "16.16.0",
-    "yarn": "1.22.19"
   }
 }
