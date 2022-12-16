@@ -1,57 +1,60 @@
+import type { NextPage } from 'next';
 import Image from 'next/image';
 import tw, { css } from 'twin.macro';
 
-export const Index = () => (
-  <div css={container}>
-    <section css={main}>
-      <h1 css={[title, title_and_description]}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+const Home: NextPage = () => {
+  return (
+    <div css={container}>
+      <section css={main}>
+        <h1 css={[title, title_and_description]}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
 
-      <p css={[description, title_and_description]}>
-        Get started by editing <code>pages/index.tsx</code>
-      </p>
+        <p css={[description, title_and_description]}>
+          Get started by editing <code>pages/index.tsx</code>
+        </p>
 
-      <button
-        css={testButton}
-        onClick={() => {
-          window.alert('With TypeScript, ESlint, Jest, Emotion, Tailwind and Twin');
-        }}
-      >
-        Test Button
-      </button>
+        <button
+          css={testButton}
+          onClick={() => {
+            window.alert('With TypeScript, ESlint, Jest, Emotion, Tailwind and Twin');
+          }}
+        >
+          Test Button
+        </button>
 
-      <div css={grid}>
-        <a href="https://nextjs.org/docs" css={[a, card]}>
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+        <div css={grid}>
+          <a href="https://nextjs.org/docs" css={[a, card]}>
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" css={[a, card]}>
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a href="https://github.com/vercel/next.js/tree/master/examples" css={[a, card]}>
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" css={[a, card]}>
+            <h3>Deploy &rarr;</h3>
+            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
+          </a>
+        </div>
+      </section>
+
+      <footer css={footer}>
+        <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer" css={a}>
+          <span tw="mr-2">Powered by</span>
+          <Image src="/vercel.svg" alt="Vercel Logo" height={'32'} width={'64'} />
         </a>
-
-        <a href="https://nextjs.org/learn" css={[a, card]}>
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a href="https://github.com/vercel/next.js/tree/master/examples" css={[a, card]}>
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" css={[a, card]}>
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
-      </div>
-    </section>
-
-    <footer css={footer}>
-      <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer" css={a}>
-        <span tw="mr-2">Powered by</span>
-        <Image src="/vercel.svg" alt="Vercel Logo" height={'32'} width={'64'} />
-      </a>
-    </footer>
-  </div>
-);
+      </footer>
+    </div>
+  );
+};
 
 const container = css`
   min-height: 100vh;
@@ -171,4 +174,4 @@ const card = css`
   }
 `;
 
-export default Index;
+export default Home;

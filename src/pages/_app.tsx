@@ -3,17 +3,19 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { css, GlobalStyles } from 'twin.macro';
 
-const App = ({ Component, pageProps }: AppProps) => (
-  <>
-    <Head>
-      <title>Nextjs</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <GlobalStyles />
-    <Global styles={globalStyles} />
-    <Component {...pageProps} />
-  </>
-);
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Head>
+        <title>Nextjs</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <GlobalStyles />
+      <Global styles={globalStyles} />
+      <Component {...pageProps} />
+    </>
+  );
+}
 
 const globalStyles = css`
   html,
@@ -28,4 +30,4 @@ const globalStyles = css`
   }
 `;
 
-export default App;
+export default MyApp;
