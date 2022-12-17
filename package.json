@@ -9,6 +9,8 @@
     "lint": "next lint",
     "typecheck": "tsc",
     "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss,ts,tsx}'",
+    "lint:style": "stylelint '**/*.{css,scss,ts,tsx}'",
+    "lint:style:fix": "stylelint --fix '**/*.{css,scss,ts,tsx}'",
     "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
     "prettier": "prettier --config .prettierrc.json './**/*.{js,jsx,ts,tsx,json,md}'",
     "format": "yarn prettier --write"
